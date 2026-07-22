@@ -1,4 +1,9 @@
 # FlixFindr 
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TMDB API](https://img.shields.io/badge/TMDB_API-0d253f?style=for-the-badge&logo=themoviedatabase&logoColor=01b4e4)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 A modern movie discovery web application built with Vanilla JavaScript and powered by the TMDB API.
 
