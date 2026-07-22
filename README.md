@@ -64,3 +64,16 @@ flixfindr
 ```
 
 ---
+
+ ## Getting Started
+
+ Clone the repository
+- git clone https://github.com/princepathak25/flixfindr.git
+
+ Install dependencies
+- npm install
+
+ Run locally
+- vercel dev
+
+---
