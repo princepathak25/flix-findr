@@ -38,3 +38,10 @@ Deployment
 - Toast Notifications
 - TMDB Powered Search
 - Secure Backend Proxy using Vercel Functions
+
+---
+
+## Live Demo 
+
+> https://flixfindr-pp.vercel.app/
+
