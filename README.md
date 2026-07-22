@@ -77,3 +77,12 @@ flixfindr
 - vercel dev
 
 ---
+
+## Environment Variables
+
+Create a `.env` file inside the project root.
+
+TMDB_API_KEY=YOUR_API_KEY
+
+---
+
