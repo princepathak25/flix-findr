@@ -21,3 +21,20 @@ API
 
 Deployment
 - Vercel
+
+---
+
+## Features
+
+- Browse Trending Movies
+- Popular, Top Rated and New Releases
+- Genre-based Discovery
+- Curated Movie Collections
+- Movie Detail Modal
+- Official Trailer Support
+- Personal Watchlist
+- Responsive Design
+- Skeleton Loading Animations
+- Toast Notifications
+- TMDB Powered Search
+- Secure Backend Proxy using Vercel Functions
