@@ -103,3 +103,11 @@ This project helped me learn:
 - Deployment using Vercel
 
 ---
+
+## Acknowledgements
+
+Movie data provided by TMDB.
+
+This product uses the TMDB API but is not endorsed or certified by TMDB.
+
+---
