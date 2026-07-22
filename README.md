@@ -45,3 +45,22 @@ Deployment
 
 > https://flixfindr-pp.vercel.app/
 
+---
+
+## Project Structure
+
+```text
+flixfindr
+│
+├── api/
+├── assets/
+├── css/
+├── js/
+├── index.html
+├── genres.html
+├── collections.html
+├── watchlist.html
+└── README.md
+```
+
+---
