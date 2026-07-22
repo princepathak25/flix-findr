@@ -86,3 +86,20 @@ TMDB_API_KEY=YOUR_API_KEY
 
 ---
 
+## Learning Outcomes
+
+This project helped me learn:
+
+- Working with REST APIs
+- Asynchronous JavaScript
+- Fetch API
+- Dynamic DOM Manipulation
+- Component-based UI organization using Vanilla JS
+- Serverless Functions with Vercel
+- Environment Variables
+- API Proxying
+- Responsive Web Design
+- Git and GitHub Workflow
+- Deployment using Vercel
+
+---
