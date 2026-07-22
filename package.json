@@ -1,0 +1,8 @@
+{
+    "name": "flixfindr",
+    "private": true,
+    "type": "module",
+    "engines": {
+        "node": "20.x"
+    }
+}

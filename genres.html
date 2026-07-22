@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genres • FlixFindr</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/cards.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/toast.css" />
+    <link rel="stylesheet" href="./css/genrePage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-left">
+          <a href="index.html" class="logo">FlixFindr</a>
+        </div>
+        <div class="nav-right">
+          <a href="index.html" class="back-home"> &larr; Home</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="category-header">
+        <h1 class="category-title"></h1>
+        <p class="category-description"></p>
+      </section>
+      <section class="movies-section">
+        <div class="movie-grid"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>FlixFindr</h2>
+          <p>Never run out of something worth watching.</p>
+        </div>
+        <div class="footer-links">
+          <a
+            href="https://github.com/princepathak25"
+            target="_blank"
+            class="footer-icon"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/princepathakindia"
+            target="_blank"
+            class="footer-icon"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.themoviedb.org/"
+            target="_blank"
+            class="footer-icon"
+          >
+            <img src="./assets/icons/tmdb.svg" alt="TMDB Icon" />
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Powered by TMDb API</p>
+        <p>Designed by Prince Pathak</p>
+      </div>
+    </footer>
+    <div class="modal hidden">
+      <div class="modal-backdrop"></div> 
+      <div class="modal-content">
+        <button class="close-modal">✕</button>
+        <div class="modal-body"></div>
+      </div>
+    </div>
+    <div id="toast-container"></div>
+    <script src="./js/api.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/watchlist.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/genrePage.js"></script>
+  </body>
+</html>

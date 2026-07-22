@@ -1,0 +1,215 @@
+.hero{
+    position:relative;
+    height:100vh;
+    padding-inline:5vw;
+    background:#0B1020 center/cover no-repeat;
+    color:var(--primary-text);
+    overflow:hidden;
+    box-shadow:0 24px 60px rgba(0,0,0,.35);
+}
+
+.hero-loading::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:2;
+    background:linear-gradient(90deg,rgba(255,255,255,.04),rgba(255,255,255,.1),rgba(255,255,255,.04));
+    background-size:300% 100%;
+    animation:heroSkeleton 1.2s linear infinite;
+}
+
+@keyframes heroSkeleton{
+    from{background-position:200% 0;}
+    to{background-position:-200% 0;}
+}
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    height:100%;
+    padding-top:7rem;
+    opacity:0;
+    transform:translateY(24px);
+    transition:.6s ease;
+}
+
+.hero-loaded .hero-content{
+    opacity:1;
+    transform:none;
+}
+
+.hero-text{
+    max-width:650px;
+    display:flex;
+    flex-direction:column;
+    gap:1.4rem;
+    color:var(--secondary-text);
+    font-size:1.06rem;
+    line-height:1.8;
+}
+
+.badge{
+    width:fit-content;
+    display:inline-flex;
+    align-items:center;
+    padding:.5rem 1rem;
+    border-radius:999px;
+    background:var(--surface);
+    color:var(--accent);
+    font:600 .9rem var(--heading-font);
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    transition:var(--transition-medium);
+}
+
+.badge:hover{
+    background:var(--surface-hover);
+    transform:translateY(-2px);
+}
+
+.hero-title{
+    max-width:750px;
+    color:white;
+    font-family:var(--heading-font);
+    font-size:clamp(3.5rem,6vw,5.5rem);
+    line-height:1.05;
+    font-weight:800;
+    letter-spacing:-.04em;
+}
+
+.hero-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.8rem 1.2rem;
+    font-size:.95rem;
+    color:var(--secondary-text);
+}
+
+.hero-tagline{
+    max-width:600px;
+    padding-left:1rem;
+    border-left:4px solid var(--accent);
+    font-size:1.15rem;
+    font-style:italic;
+    line-height:1.7;
+    color:var(--secondary-text);
+}
+
+.hero-overview{
+    max-width:600px;
+    line-height:1.85;
+    font-size:1rem;
+
+    display:-webkit-box;
+    line-clamp:4;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+.hero-actions{
+    display:flex;
+    gap:1rem;
+    margin-top:1rem;
+}
+
+.primary-btn,
+.secondary-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:56px;
+    padding:0 32px;
+    border-radius:18px;
+    font-size:1rem;
+    font-weight:700;
+    transition:var(--transition-medium);
+}
+
+.primary-btn{
+    background:var(--accent);
+    color:var(--background);
+}
+
+.secondary-btn{
+    background:rgba(255,255,255,.08);
+    color:white;
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+.primary-btn:hover{
+    box-shadow:0 16px 32px rgba(0,0,0,.25);
+}
+
+.secondary-btn:hover{
+    background:rgba(255,255,255,.14);
+}
+
+.hero-title,
+.hero-tagline,
+.hero-overview,
+.hero-actions button{
+    opacity:0;
+    transform:translateY(24px);
+}
+
+.hero-title.animate,
+.hero-tagline.animate,
+.hero-overview.animate,
+.hero-actions button.animate{
+    animation:heroTextIn .7s cubic-bezier(.22,1,.36,1) forwards;
+}
+
+.hero-tagline.animate{animation-delay:.12s;}
+.hero-overview.animate{animation-delay:.2s;}
+.hero-actions button:first-child.animate{animation-delay:.3s;}
+.hero-actions button:last-child.animate{animation-delay:.4s;}
+
+@keyframes heroTextIn{
+    from{
+        opacity:0;
+        transform:translateY(24px);
+    }
+    to{
+        opacity:1;
+        transform:none;
+    }
+}
+
+@media(max-width:900px){
+    .hero{
+        height:auto;
+        min-height:100vh;
+        padding-inline:1.5rem;
+    }
+
+    .hero-content{
+        padding-top:7rem;
+        padding-bottom:4rem;
+    }
+
+    .hero-title{
+        font-size:clamp(3rem,12vw,5rem);
+    }
+}
+
+@media(max-width:600px){
+    .hero-actions{
+        flex-direction:column;
+    }
+
+    .hero-actions button{
+        width:100%;
+    }
+
+    .hero-overview{
+        line-clamp:4;
+        -webkit-line-clamp:4;
+    }
+}

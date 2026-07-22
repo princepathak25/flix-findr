@@ -1,0 +1,41 @@
+//get watchlist
+function getWatchlist() {
+    const watchlist = localStorage.getItem('watchlist');
+    return watchlist ? JSON.parse(watchlist) : [];
+}
+
+//save movie
+function saveMovie(movie) {
+    const watchlist = getWatchlist();
+    const exists = watchlist.some(item => item.id === movie.id);
+    if (exists) return;
+    watchlist.push({
+        id: movie.id,
+        title: movie.title,
+        poster_path: movie.poster_path,
+        vote_average: movie.vote_average,
+        release_date: movie.release_date
+    });
+    localStorage.setItem('watchlist', JSON.stringify(watchlist));
+    showToast(`${movie.title}`,"success");
+}
+//remove movie
+function removeMovie(movieId) {
+    const watchlist = getWatchlist();
+    const movie = watchlist.find(movie => movie.id === movieId);
+    const updated = watchlist.filter(movie => movie.id !== movieId);
+    localStorage.setItem('watchlist', JSON.stringify(updated));
+    showToast(`${movie.title}`,"error");
+}
+//check if movie is saved
+function isMovieSaved(movieId) {
+    return getWatchlist().some(movie => movie.id === movieId);
+}
+function updateFavBtn(favBtn, movieId) {
+    if (isMovieSaved(movieId)) {
+        favBtn.textContent = "♥ Remove from Watchlist";
+    } else {
+        favBtn.textContent = "♡ Add to Watchlist";
+    }
+    favBtn.classList.toggle("saved", isMovieSaved(movieId));
+}

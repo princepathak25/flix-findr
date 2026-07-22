@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlixFindr • Discover Your Next Favorite Movie</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/toast.css">
+    <link rel="stylesheet" href="./css/genres.css">
+    <link rel="stylesheet" href="./css/collections.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html" class="logo">FlixFindr</a>
+            </div>
+             <div class="nav-right">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon"></span>
+                </button>
+                <a href="watchlist.html" class="watchlist-link">❤️</a>
+             </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero hero-loading">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="badge hero-badge">Featured Today</span>
+                    <h1 class = "hero-title">Interstellar</h1>
+                    <div class="hero-meta">
+                        <span class="hero-rating">⭐ 8.7</span>
+                        <span class="hero-year">2014</span>
+                        <span class="hero-runtime">169 min</span>
+                        <span class="hero-genre">Sci-Fi</span>
+                    </div>
+                    <p class="hero-tagline"> 
+                        “Do not go gentle into that good night...”
+                    </p>
+                    <p class="hero-overview">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.
+                    </p>
+                    <div class="hero-actions">
+                        <button type="button" class="primary-btn trailer-btn">▶ Watch Trailer</button>
+                        <button type="button" class="secondary-btn info-btn">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending">
+            <div class="section-header"> 
+                <div class="description">
+                    <h2>Trending Today</h2>
+                    <p>The hottest movies everyone is talking about.</p>
+                </div>
+            </div>
+            <div class="movie-carousel">
+                <button class="scroll left"> ❮ </button>
+                <div class="movie-row"></div>
+                <button class="scroll right"> ❯ </button>
+            
+            </div>
+        </section>
+
+        <section class="popular">
+            <div class="section-header">
+                <div class="description">
+                    <h2>Popular This Week</h2>
+                    <p>Your weekend plans, sorted. The most-streamed titles this week.
+                    </p>
+                </div>
+            </div>
+                <div class="movie-carousel">
+                <button class="scroll left"> ❮ </button>
+                <div class="movie-row"></div>
+                <button class="scroll right"> ❯ </button>
+            
+            </div>
+        </section>
+
+        <section class="top-rated">
+            <div class="section-header">
+                <div class="description">
+                    <h2>Top Rated</h2>
+                    <p>Certified masterpieces. The highest-scoring titles of all time.
+                    </p>
+                </div>
+            </div>
+            <div class="movie-carousel">
+                <button class="scroll left"> ❮ </button>
+                <div class="movie-row"></div>
+                <button class="scroll right"> ❯ </button>  
+            </div>
+        </section>
+
+        <section class="new-releases">
+            <div class="section-header">
+                <div class="description">
+                    <h2>New Releases</h2>
+                    <p>Skip the spoilers. See the brand-new arrivals everyone will be talking about tomorrow.</p>
+                </div>
+            </div>    
+            <div class="movie-carousel">
+                <button class="scroll left"> <i class="fa-solid fa-chevron-left"></i> </button>
+                <div class="movie-row"></div>
+                <button class="scroll right"> <i class="fa-solid fa-chevron-right"></i> </button>  
+            </div>
+        </section>
+
+        <section class="genres">
+            <div class="section-header">
+                <div class="description">
+                    <h2>Explore Genres</h2>
+                    <p>Pick your flavor. Find exactly what you’re in the mood for.</p>
+                </div>
+                </div>
+                <div class="genre-container">
+
+                </div>
+        </section>
+
+        <section class="collections">
+            <div class="section-header">
+                <div class="description">
+                    <h2>Curated Collections</h2>
+                    <p>No endless scrolling. Perfectly paired titles for your next movie night.</p>
+                </div>
+                </div>
+                <div class="collections-container">
+                </div>
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>FlixFindr</h2>
+                <p>Never run out of something worth watching.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/princepathak25" target="_blank" class="footer-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/princepathakindia" target="_blank" class="footer-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.themoviedb.org/" target="_blank" class="footer-icon">
+                    <img src="./assets/icons/tmdb.svg" alt="TMDB Icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Powered by TMDb</p>
+            <p>Designed by Prince Pathak</p>
+        </div>
+    </footer>
+    <div class="modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="close-modal">✕</button>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+    <div id="toast-container"></div>
+    <script src="./js/api.js"></script>
+    <script src="./js/theme.js"></script>    
+    <script src="./js/ui.js"></script>
+    <script src="./js/hero.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/watchlist.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/genres.js"></script>
+    <script src="./js/collections.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
