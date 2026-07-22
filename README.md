@@ -111,3 +111,14 @@ Movie data provided by TMDB.
 This product uses the TMDB API but is not endorsed or certified by TMDB.
 
 ---
+
+## Connect with Me
+
+- **GitHub:** https://github.com/princepathak25
+- **LinkedIn:** https://www.linkedin.com/in/prince-pathak-142651373
+
+---
+
+### Author 
+
+**Prince Pathak**
