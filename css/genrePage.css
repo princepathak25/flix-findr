@@ -21,7 +21,6 @@
   transition: var(transition-slow);
 }
 .category-title::first-letter {
-  /* color: var(--accent); */
   font-size: clamp(2.5rem, 5vw, 4rem);
 }
 .category-title:hover {
