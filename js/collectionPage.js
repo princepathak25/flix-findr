@@ -28,6 +28,7 @@ async function fetchCollectionMovies(genreIds) {
   }
 }
 
+//function to render the movie-grid 
 function renderCollectionMovies(movies) {
   const container = document.querySelector(".movie-grid");
   if (!container) return;
