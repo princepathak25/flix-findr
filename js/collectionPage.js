@@ -13,6 +13,7 @@ if (!collection) {
   fetchCollectionMovies(collection.genres);
 }
 
+//function to fetch the movies for collections
 async function fetchCollectionMovies(genreIds) {
   try {
     const genreQuery = genreIds.join(",");
