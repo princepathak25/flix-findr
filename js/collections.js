@@ -1,3 +1,4 @@
+//initializing the container of collections
 const collections = [
   {
     title: "Fractured Realities",
