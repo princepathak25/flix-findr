@@ -23,6 +23,7 @@ async function fetchGenreMovies(genreId) {
     }
 }
 
+// function to render the movie-grid on genre page
 function renderMovieGrid(movies) {
     const container = document.querySelector(".movie-grid");
     if(!container) return;
