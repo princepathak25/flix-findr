@@ -1,3 +1,4 @@
+//initializing variables and parameters
 const params = new URLSearchParams(window.location.search);
 const collectionName = params.get("name");
 const title = document.querySelector(".category-title");
