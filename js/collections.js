@@ -44,6 +44,7 @@ const collections = [
   },
 ];
 
+// function to render the collections
 async function renderCollections() {
   const container = document.querySelector(".collections-container");
   if (!container) return;
