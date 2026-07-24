@@ -8,6 +8,7 @@ const description = document.querySelector(".category-description");
 title.textContent = genreName;
 description.textContent = `Explore the best ${genreName} movies curated for you.`;
 
+// function to fetch the movies on genre page
 async function fetchGenreMovies(genreId) {
     try {
         const response = await fetch(`${base_url}/discover?genre=${genreId}`);
