@@ -1,3 +1,4 @@
+// initializing variables and parameters for the genre page
 const params = new URLSearchParams(window.location.search);
 const genreId = params.get("id");
 const genreName = params.get("name");
