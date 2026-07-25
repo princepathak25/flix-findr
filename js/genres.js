@@ -20,6 +20,7 @@ const genres = [
     {id: 37, name: "Western"}
 ];
 
+// function to render the genres
 function renderGenres() {
     const container = document.querySelector(".genre-container");
     if(!container) return;
