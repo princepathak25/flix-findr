@@ -1,3 +1,4 @@
+// initializing the container of collections
 const genres = [
     {id: 28, name: "Action"},
     {id: 12, name: "Adventure"},
@@ -18,6 +19,7 @@ const genres = [
     {id: 10752, name: "War"},
     {id: 37, name: "Western"}
 ];
+
 function renderGenres() {
     const container = document.querySelector(".genre-container");
     if(!container) return;
