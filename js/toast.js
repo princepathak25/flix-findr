@@ -1,3 +1,4 @@
+// function to display the toast message
 function showToast(message,status="success") {
     const toastContainer = document.getElementById('toast-container');
     const toast = document.createElement('div');
