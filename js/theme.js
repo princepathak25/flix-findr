@@ -14,6 +14,8 @@ function toggleTheme(theme) {
         themeIcon.innerHTML=sunIcon;
     }
 }
+
+// adding the condition and event listener
 const savedTheme = localStorage.getItem("theme");
 if(savedTheme){
     toggleTheme(savedTheme);
