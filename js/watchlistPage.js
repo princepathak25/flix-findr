@@ -1,3 +1,4 @@
+// function to fetch and render watchlist
 async function renderWatchlist() {
     const watchlist = getWatchlist();
    if(watchlist.length === 0){
