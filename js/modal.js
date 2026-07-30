@@ -12,6 +12,7 @@ document.querySelector(".modal-backdrop").addEventListener("click", () => {
   modal.classList.add("hidden");
 });
 
+//function to open modal
 function openModal(movie) {
     modal.classList.remove("hidden");
     const genres = movie.genres.map(genre => `<span class="meta-item">${genre.name}</span>`).join(" • ");
