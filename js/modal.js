@@ -1,3 +1,4 @@
+//initializing variables for modal
 const modal = document.querySelector(".modal");
 const modalBody = document.querySelector(".modal-body");
 const closeBtn = document.querySelector(".close-modal");
