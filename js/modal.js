@@ -3,6 +3,7 @@ const modal = document.querySelector(".modal");
 const modalBody = document.querySelector(".modal-body");
 const closeBtn = document.querySelector(".close-modal");
 
+//adding event listener to the close button
 closeBtn.addEventListener("click", () => {
   modal.classList.add("hidden");
 });
