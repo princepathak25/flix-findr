@@ -10,4 +10,5 @@ fetchTopRated();
 fetchNewReleases();
 //calling back function to fetch genres
 fetchGenres();
+// calling back function to render genres section
 renderGenres();
