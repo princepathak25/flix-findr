@@ -4,6 +4,7 @@ renderHeroSection();
 fetchTrending();
 //calling back function to fetch the popular section
 fetchPopular();
+//calling back function to fetch the top rated section
 fetchTopRated();
 fetchNewReleases();
 fetchGenres();
