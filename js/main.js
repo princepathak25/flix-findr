@@ -6,6 +6,7 @@ fetchTrending();
 fetchPopular();
 //calling back function to fetch the top rated section
 fetchTopRated();
+//calling back function to fetch the new releases section
 fetchNewReleases();
 fetchGenres();
 renderGenres();
