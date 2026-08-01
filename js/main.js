@@ -8,5 +8,6 @@ fetchPopular();
 fetchTopRated();
 //calling back function to fetch the new releases section
 fetchNewReleases();
+//calling back function to fetch genres
 fetchGenres();
 renderGenres();
