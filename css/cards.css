@@ -208,15 +208,6 @@
 .watch-btn:hover{
     background:var(--accent-hover);
 }
-/* .fav-btn{
-    background:rgba(255,255,255,.08);
-    border-radius: var(--radius-pill);
-    color:var(--accent);
-    padding: 10px 20px;
-    border-radius: var(--radius-pill);
-    transition: var(--transition-medium);
-    font-size:1.25rem;
-} */
 .movie-card:hover .movie-overlay h3{
     transform:none;
     opacity:1;
