@@ -33,6 +33,7 @@ async function fetchFeaturedMovie() {
     }
 }
 
+// function to update the hero section with fetched movie
 function updateHeroSection(movie) {
     if(!movie) return;
     featuredMovie = movie;
