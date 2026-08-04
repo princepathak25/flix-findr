@@ -96,6 +96,8 @@ hero.trailerBtn.addEventListener("click", async() => {
         showToast("Trailer not available");
     }
 });
+
+// function to render the hero section 
 async function renderHeroSection(){
     const movie=await fetchFeaturedMovie();
     updateHeroSection(movie);
