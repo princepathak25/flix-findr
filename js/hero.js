@@ -75,6 +75,7 @@ const bg = new Image();
    }
 }
 
+// function to fetch trailer of the movie 
 async function fetchTrailer(movieId) {
     const reponse = await fetch(`${base_url}/videos?id=${movieId}`);
     const data = await reponse.json();
