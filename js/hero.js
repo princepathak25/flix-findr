@@ -14,6 +14,8 @@ const hero = {
 };
 let featuredMovie=null;
 const badges = ["Editor's Pick", "Featured Today", "Critics' Choice", "Trending Now", "Must Watch","Cinema Spotlight","Highly Recommended","Fan Favorite","Blockbuster Pick"];
+
+// function to fetch the movie to be featured on hero section
 async function fetchFeaturedMovie() {
     try {
         const response = await fetch( `${base_url}/trending`);
