@@ -1,3 +1,4 @@
+// initializing parameters for hero section
 const hero = {
     section: document.querySelector(".hero"),
     badge: document.querySelector(".hero-badge"),
