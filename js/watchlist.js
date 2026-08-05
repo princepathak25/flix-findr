@@ -1,4 +1,4 @@
-//get watchlist
+// function to get watchlist through Local Storage
 function getWatchlist() {
     const watchlist = localStorage.getItem('watchlist');
     return watchlist ? JSON.parse(watchlist) : [];
