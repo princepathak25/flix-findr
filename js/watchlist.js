@@ -31,6 +31,7 @@ function removeMovie(movieId) {
 function isMovieSaved(movieId) {
     return getWatchlist().some(movie => movie.id === movieId);
 }
+// function to update the button as per saved/unsaved
 function updateFavBtn(favBtn, movieId) {
     if (isMovieSaved(movieId)) {
         favBtn.textContent = "♥ Remove from Watchlist";
