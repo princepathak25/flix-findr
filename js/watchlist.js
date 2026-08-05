@@ -19,6 +19,7 @@ function saveMovie(movie) {
     localStorage.setItem('watchlist', JSON.stringify(watchlist));
     showToast(`${movie.title}`,"success");
 }
+
 // function to remove a movie
 function removeMovie(movieId) {
     const watchlist = getWatchlist();
@@ -27,10 +28,12 @@ function removeMovie(movieId) {
     localStorage.setItem('watchlist', JSON.stringify(updated));
     showToast(`${movie.title}`,"error");
 }
+
 // function to check if a movie is already saved
 function isMovieSaved(movieId) {
     return getWatchlist().some(movie => movie.id === movieId);
 }
+
 // function to update the button as per saved/unsaved
 function updateFavBtn(favBtn, movieId) {
     if (isMovieSaved(movieId)) {
