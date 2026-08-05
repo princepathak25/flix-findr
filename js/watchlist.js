@@ -4,7 +4,7 @@ function getWatchlist() {
     return watchlist ? JSON.parse(watchlist) : [];
 }
 
-//save movie
+// function to save a movie
 function saveMovie(movie) {
     const watchlist = getWatchlist();
     const exists = watchlist.some(item => item.id === movie.id);
