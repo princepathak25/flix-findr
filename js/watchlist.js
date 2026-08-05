@@ -19,7 +19,7 @@ function saveMovie(movie) {
     localStorage.setItem('watchlist', JSON.stringify(watchlist));
     showToast(`${movie.title}`,"success");
 }
-//remove movie
+// function to remove a movie
 function removeMovie(movieId) {
     const watchlist = getWatchlist();
     const movie = watchlist.find(movie => movie.id === movieId);
