@@ -27,7 +27,7 @@ function removeMovie(movieId) {
     localStorage.setItem('watchlist', JSON.stringify(updated));
     showToast(`${movie.title}`,"error");
 }
-//check if movie is saved
+// function to check if a movie is already saved
 function isMovieSaved(movieId) {
     return getWatchlist().some(movie => movie.id === movieId);
 }
