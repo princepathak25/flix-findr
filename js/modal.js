@@ -70,6 +70,7 @@ async function fetchMovieDetails(movieId) {
     if(!response.ok) throw new Error(`Failed to fetch movie details: ${response.status}`);
     return response.json();
 }
+
 //to fetch the trailer of the movie
 async function fetchMovieTrailer(movieId) {
     const response = await fetch(`${base_url}/videos?id=${movieId}`);
